@@ -1,10 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home'
+import Create from '@/views/Create'
+import Tags from '@/views/Tags'
+import Board from '@/views/Board'
 
 Vue.use(VueRouter)
 const routes = [
-    { path: "/home", name: "home", component: Home }
+    { path: "/", name: "home", component: Home },
+    { path: "/create" , name: "create", component: Create},
+    { path: "/tags" , name: "tags", component: Tags},
+    { path: "/board", name: "board", component: Board}
 ];
 const router = new VueRouter({
     mode: "history",
