@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <nav-bar /> 
     <router-view />
   </div>
@@ -13,6 +13,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 //
 </style>
