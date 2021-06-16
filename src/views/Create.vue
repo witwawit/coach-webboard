@@ -119,7 +119,7 @@ label {
 }
 
 .text {
-  color: black;
+  color: $font-color;
   margin-bottom: 50px;
   padding: 40px;
 }
