@@ -80,7 +80,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 h3 {
   color: #9c9c9c;
   font-weight: 300;
@@ -101,12 +101,12 @@ label {
   /* margin-bottom: 20px; */
 }
 
-.text{
-	color: black;
-	margin-bottom: 50px;
-	padding: 40px;
+.text {
+  color: black;
+  margin-bottom: 50px;
+  padding: 40px;
 }
-h2{
-	margin-bottom: 10px;
+h2 {
+  margin-bottom: 10px;
 }
 </style>
