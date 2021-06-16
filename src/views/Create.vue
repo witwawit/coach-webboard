@@ -88,10 +88,7 @@
 export default {};
 </script>
 
-<style scoped>
-h1{
-  padding-left: 0;
-}
+<style lang="scss" scoped>
 h3 {
   color: #9c9c9c;
   font-weight: 300;
@@ -117,32 +114,12 @@ label {
   transform: scale(1.1);
 }
 
-.text{
-	color: #4f4f4f;
-	margin-bottom: 50px;
-	padding: 40px;
+.text {
+  color: black;
+  margin-bottom: 50px;
+  padding: 40px;
 }
-h2{
-	margin-bottom: 10px;
-}
-
-/* bottom parts */
-.tool-bars{
-  width: 100%;
-}
-.tool{
-  width: 90%;
-}
-.tool i{
-  font-size: 40px;
-  color: #bdbdbd;
-  transition: .3s ease;
-}
-.tool i:hover{
-  cursor: pointer;
-  color: #828282;
-}
-.but{
-  width: 10%;
+h2 {
+  margin-bottom: 10px;
 }
 </style>
