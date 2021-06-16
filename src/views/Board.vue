@@ -145,14 +145,14 @@
 export default {};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .common-box {
   margin-top: 40px;
   /* margin-bottom: 20px; */
 }
 h3,
 p {
-  color: #4f4f4f;
+  color: $font-color;
 }
 .block1,
 .block3 {
@@ -191,7 +191,7 @@ i {
 }
 i:hover {
   cursor: pointer;
-  color: #f46500;
+  color: $primary-color;
 }
 /* for comments */
 .comments .common-box {
@@ -222,7 +222,7 @@ i:hover {
 }
 .control h4 {
   padding: 40px;
-  color: #f46500;
+  color: $primary-color;
 }
 .control h3,
 .control p {
@@ -236,7 +236,7 @@ i:hover {
   color: #222222;
 }
 .btn {
-  background: #f46500;
+  background: $primary-color;
   color: white;
   /* float: right; */
   /* margin-bottom: 20px; */
@@ -244,8 +244,9 @@ i:hover {
   transition: 0.3s ease;
 }
 .btn:hover {
-  background: #eb5757;
-  transform: scale(1.1);
+  background: $btn-hover;
+  color: white;
+  // transform: scale(1.1);
 }
 
 /* bottom parts */

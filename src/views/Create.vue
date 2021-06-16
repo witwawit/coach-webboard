@@ -43,7 +43,7 @@
 
           <div class="tool-bars d-flex justify-content-center flex-wrap">
             <div class="tool d-flex flex-column">
-              <i class='bx bxs-image align-self-end'></i>
+              <i class="bx bxs-image align-self-end"></i>
             </div>
 
             <div class="but d-flex flex-column">
@@ -89,6 +89,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  padding-left: 0;
+}
 h3 {
   color: #9c9c9c;
   font-weight: 300;
@@ -103,15 +106,16 @@ label {
   color: #9c9c9c;
 }
 .btn {
-  background: #f46500;
+  background: $primary-color;
   color: white;
-  transition: .3s ease;
+  transition: 0.3s ease;
   /* float: right; */
   /* margin-bottom: 20px; */
 }
-.btn:hover{
-  background: #EB5757;
-  transform: scale(1.1);
+.btn:hover {
+  background: #eb5757;
+  // transform: scale(1.1);
+  color: white;
 }
 
 .text {
@@ -121,5 +125,24 @@ label {
 }
 h2 {
   margin-bottom: 10px;
+}
+
+.tool-bars {
+  width: 100%;
+}
+.tool {
+  width: 90%;
+}
+.tool i {
+  font-size: 40px;
+  color: #bdbdbd;
+  transition: 0.3s ease;
+}
+.tool i:hover {
+  cursor: pointer;
+  color: #828282;
+}
+.but {
+  width: 10%;
 }
 </style>

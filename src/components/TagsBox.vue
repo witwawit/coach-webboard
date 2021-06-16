@@ -2,7 +2,7 @@
   <div class="box">#coach</div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .box {
   background: none;
   border: 2px solid #dedede;

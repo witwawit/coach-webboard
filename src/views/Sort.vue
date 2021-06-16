@@ -1,14 +1,39 @@
 <template>
   <div>
     <section class="tagsort">
-      <div class="max-width container">
+      <div class="max-width container flex-wrap">
         <h1>Sort By : <span>Coach</span></h1>
         <div class="common-box">
           <h4>Most Popular</h4>
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-            alias!
-          </h5>
+
+          <!-- Topic list  วนv-forได้-->
+          <div v-for="list in 5" :key="`m-${list}`">
+            <topic-list></topic-list>
+          </div>
+        </div>
+        <!-- end topic main -->
+
+        <!-- start new topics -->
+        <div class="left">
+          <div class="common-box">
+            <h4>Latest Webboards</h4>
+
+            <div v-for="list in 3" :key="`m-${list}`">
+              <topic-list></topic-list>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="common-box">
+            <h4>Most Tags</h4>
+
+            <div class="topic-list">
+              <a href=""> <h5>#Lorem</h5></a>
+            </div>
+
+            <div class="line"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -16,22 +41,36 @@
 </template>
 
 <script>
-export default {};
+import TopicList from "@/components/TopicList";
+export default {
+  components: { TopicList },
+};
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 h1 {
   padding-left: 0;
 }
 h1 span {
   font-weight: 300;
 }
-h4,
-h5,
-p {
-  color: #4f4f4f;
+.left {
+  width: 70%;
+  float: left;
 }
-h5{
-    font-weight: 400;
+.right {
+  width: 25%;
+  float: right;
+}
+.right .topic-list {
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
 }
 </style>

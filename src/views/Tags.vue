@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .common-box {
   margin-top: 40px;
 }
