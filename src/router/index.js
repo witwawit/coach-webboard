@@ -5,6 +5,7 @@ import Create from '@/views/Create'
 import Tags from '@/views/Tags'
 import Board from '@/views/Board'
 import Sort from '@/views/Sort'
+import Login from '@/views/Login'
 
 Vue.use(VueRouter)
 const routes = [
@@ -12,7 +13,8 @@ const routes = [
     { path: "/create" , name: "create", component: Create},
     { path: "/tags" , name: "tags", component: Tags},
     { path: "/board", name: "board", component: Board},
-    { path: "/sort", name: "sort", component: Sort}
+    { path: "/sort", name: "sort", component: Sort},
+    { path: "/login", name: "login", component: Login}
 ];
 const router = new VueRouter({
     mode: "history",
