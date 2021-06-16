@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="createnew">
-      <div class="max-width">
+      <div class="max-width container">
         <h1>Create New Webboard</h1>
-        <div class="container">
+        <div class="common-box d-flex flex-column">
           <div class="input-group mb-3">
             <h3>Title :</h3>
             <input
@@ -41,7 +41,15 @@
 
           <div class="line"></div>
 
-          <button type="button" class="btn">Create</button>
+          <div class="tool-bars d-flex justify-content-center flex-wrap">
+            <div class="tool d-flex flex-column">
+              <i class='bx bxs-image align-self-end'></i>
+            </div>
+
+            <div class="but d-flex flex-column">
+              <button type="button" class="btn align-self-end">Create</button>
+            </div>
+          </div>
         </div>
 
         <div class="text">
@@ -81,6 +89,9 @@ export default {};
 </script>
 
 <style scoped>
+h1{
+  padding-left: 0;
+}
 h3 {
   color: #9c9c9c;
   font-weight: 300;
@@ -97,16 +108,41 @@ label {
 .btn {
   background: #f46500;
   color: white;
-  float: right;
+  transition: .3s ease;
+  /* float: right; */
   /* margin-bottom: 20px; */
+}
+.btn:hover{
+  background: #EB5757;
+  transform: scale(1.1);
 }
 
 .text{
-	color: black;
+	color: #4f4f4f;
 	margin-bottom: 50px;
 	padding: 40px;
 }
 h2{
 	margin-bottom: 10px;
+}
+
+/* bottom parts */
+.tool-bars{
+  width: 100%;
+}
+.tool{
+  width: 90%;
+}
+.tool i{
+  font-size: 40px;
+  color: #bdbdbd;
+  transition: .3s ease;
+}
+.tool i:hover{
+  cursor: pointer;
+  color: #828282;
+}
+.but{
+  width: 10%;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <section class="findtag">
-      <div class="max-width">
-        <div class="container">
+      <div class="max-width container">
+        <div class="common-box">
           <h3>Find Your Tags :</h3>
           <div class="line"></div>
           <div class="input-group flex-nowrap">
@@ -16,7 +16,7 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="common-box">
           <h3>All Tags :</h3>
           <div class="line"></div>
           <div class="d-flex justify-content-center flex-wrap">
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.common-box {
   margin-top: 40px;
 }
 .line {
@@ -50,5 +50,8 @@ export default {
 }
 input {
   border: none;
+}
+h3{
+    font-size: 24px;
 }
 </style>

@@ -4,13 +4,15 @@ import Home from '@/views/Home'
 import Create from '@/views/Create'
 import Tags from '@/views/Tags'
 import Board from '@/views/Board'
+import Sort from '@/views/Sort'
 
 Vue.use(VueRouter)
 const routes = [
     { path: "/", name: "home", component: Home },
     { path: "/create" , name: "create", component: Create},
     { path: "/tags" , name: "tags", component: Tags},
-    { path: "/board", name: "board", component: Board}
+    { path: "/board", name: "board", component: Board},
+    { path: "/sort", name: "sort", component: Sort}
 ];
 const router = new VueRouter({
     mode: "history",

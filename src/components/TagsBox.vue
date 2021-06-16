@@ -5,23 +5,25 @@
 <style scoped>
 .box {
   background: none;
-  border: 2px solid rgb(98, 98, 98);
+  border: 2px solid #dedede;
   border-radius: 10px;
-  height: 100px;
-  transition: .3s ease;
-  color: black;
+  height: 80px;
+  transition: 0.3s ease;
+  color: #6b6b6b;
   margin: 20px;
+  margin-bottom: 0;
+  margin-right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
 }
 .box:hover {
   cursor: pointer;
-  background: #f46500;
-  color: white;
-  border: #f46500;
+  color: #f46500;
+  border-color: #f46500;
+  background: #fff5ef;
 }
 </style>
